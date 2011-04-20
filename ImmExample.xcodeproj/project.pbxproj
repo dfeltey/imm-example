@@ -27,6 +27,7 @@
 		3570141A135CBCAA004B25E4 /* HangmanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35701419135CBCAA004B25E4 /* HangmanViewController.m */; };
 		358BA5B2135E5931002DD00F /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 358BA5B1135E5931002DD00F /* text.txt */; };
 		359AC44E1357FDCD00B66266 /* samIam.png in Resources */ = {isa = PBXBuildFile; fileRef = 359AC44D1357FDCD00B66266 /* samIam.png */; };
+		35A0821E135EAFB400C5A284 /* Background_1_Clean.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0821D135EAFB400C5A284 /* Background_1_Clean.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		35701419135CBCAA004B25E4 /* HangmanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanViewController.m; sourceTree = "<group>"; };
 		358BA5B1135E5931002DD00F /* text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 		359AC44D1357FDCD00B66266 /* samIam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = samIam.png; sourceTree = "<group>"; };
+		35A0821D135EAFB400C5A284 /* Background_1_Clean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_1_Clean.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		1FD33D34134E4A16000BB622 /* Custom Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				35A0821D135EAFB400C5A284 /* Background_1_Clean.png */,
 				358BA5B1135E5931002DD00F /* text.txt */,
 				3570140E135CA171004B25E4 /* brushedSteel_PatrickHoesly.png */,
 				359AC44D1357FDCD00B66266 /* samIam.png */,
@@ -232,6 +235,7 @@
 				3570140C135C98BF004B25E4 /* HangmanViewController.xib in Resources */,
 				3570140F135CA171004B25E4 /* brushedSteel_PatrickHoesly.png in Resources */,
 				358BA5B2135E5931002DD00F /* text.txt in Resources */,
+				35A0821E135EAFB400C5A284 /* Background_1_Clean.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

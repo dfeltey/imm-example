@@ -45,6 +45,20 @@
 				<int key="NSvFlags">292</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
+					<object class="IBUIImageView" id="899885122">
+						<reference key="NSNextResponder" ref="427542571"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrameSize">{320, 460}</string>
+						<reference key="NSSuperview" ref="427542571"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="523062186"/>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">Background_1_Clean.png</string>
+						</object>
+					</object>
 					<object class="IBUIView" id="58359680">
 						<reference key="NSNextResponder" ref="427542571"/>
 						<int key="NSvFlags">274</int>
@@ -57,6 +71,11 @@
 								<reference key="NSSuperview" ref="58359680"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="348044664"/>
+								<object class="NSColor" key="IBUIBackgroundColor" id="579614130">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MCAwIDAAA</bytes>
+								</object>
+								<float key="IBUIAlpha">0.0</float>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<object class="NSCustomResource" key="IBUIImage">
@@ -86,9 +105,9 @@
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MQA</bytes>
 								</object>
-								<object class="NSColor" key="IBUINormalTitleColor" id="954094681">
+								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">Ny40MTM5ODUzNTVlLTA1IDAuNjQ0OTI5ODk3MSAwLjk3MjgyNjA4NwA</bytes>
+									<bytes key="NSRGB">MC4yNzQzMDAzMzU4IDAuNDg3NDA2NDQ1MiAwLjY2ODM2NzM0NjkAA</bytes>
 								</object>
 								<object class="NSColor" key="IBUINormalTitleShadowColor" id="70063497">
 									<int key="NSColorSpace">3</int>
@@ -110,9 +129,9 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">B</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<object class="NSColor" key="IBUINormalTitleColor" id="251761535">
+								<object class="NSColor" key="IBUINormalTitleColor" id="979745543">
 									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">Ny40MTM5ODUzNTVlLTA1IDAuNjQ0OTI5ODk3MSAwLjk3MjgyNjA4NwA</bytes>
+									<bytes key="NSRGB">MC4yNzQzMDAzMzU4IDAuNDg3NDA2NDQ1MiAwLjY2ODM2NzM0NjkAA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
@@ -131,7 +150,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">C</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="251761535"/>
+								<reference key="IBUINormalTitleColor" ref="979745543"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="211195830">
@@ -149,10 +168,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">D</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<object class="NSColor" key="IBUINormalTitleColor">
-									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">Ny40MTM5ODUzNTVlLTA1IDAuNjQ0OTI5ODk3MSAwLjk3MjgyNjA4NwA</bytes>
-								</object>
+								<reference key="IBUINormalTitleColor" ref="979745543"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="1042630864">
@@ -170,7 +186,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">E</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="251761535"/>
+								<reference key="IBUINormalTitleColor" ref="979745543"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="126965627">
@@ -188,7 +204,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">F</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="251761535"/>
+								<reference key="IBUINormalTitleColor" ref="979745543"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="660530749">
@@ -206,7 +222,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">G</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="251761535"/>
+								<reference key="IBUINormalTitleColor" ref="979745543"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="332020041">
@@ -224,7 +240,10 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">H</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="954094681"/>
+								<object class="NSColor" key="IBUINormalTitleColor" id="938943453">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC4yNzQzMDAzMzU4IDAuNDg3NDA2NDQ1MiAwLjY2ODM2NzM0NjkAA</bytes>
+								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="494000959">
@@ -242,9 +261,9 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">Q</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<object class="NSColor" key="IBUINormalTitleColor" id="16702180">
+								<object class="NSColor" key="IBUINormalTitleColor" id="289528063">
 									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">Ny40MTM5ODUzNTVlLTA1IDAuNjQ0OTI5ODk3MSAwLjk3MjgyNjA4NwA</bytes>
+									<bytes key="NSRGB">MC4yNzQzMDAzMzU4IDAuNDg3NDA2NDQ1MiAwLjY2ODM2NzM0NjkAA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
@@ -263,7 +282,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">R</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="16702180"/>
+								<reference key="IBUINormalTitleColor" ref="289528063"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="246374947">
@@ -281,7 +300,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">S</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="16702180"/>
+								<reference key="IBUINormalTitleColor" ref="289528063"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="1026249636">
@@ -299,7 +318,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">T</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="16702180"/>
+								<reference key="IBUINormalTitleColor" ref="289528063"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="537845790">
@@ -317,7 +336,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">U</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="16702180"/>
+								<reference key="IBUINormalTitleColor" ref="289528063"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="945307009">
@@ -335,7 +354,10 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">V</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="16702180"/>
+								<object class="NSColor" key="IBUINormalTitleColor" id="771739621">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC4yNzQzMDAzMzU4IDAuNDg3NDA2NDQ1MiAwLjY2ODM2NzM0NjkAA</bytes>
+								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="56133948">
@@ -353,7 +375,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">W</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="16702180"/>
+								<reference key="IBUINormalTitleColor" ref="771739621"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="92728445">
@@ -371,7 +393,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">X</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="16702180"/>
+								<reference key="IBUINormalTitleColor" ref="771739621"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="260874321">
@@ -389,7 +411,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">I</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="954094681"/>
+								<reference key="IBUINormalTitleColor" ref="938943453"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="836492732">
@@ -407,7 +429,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">J</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="954094681"/>
+								<reference key="IBUINormalTitleColor" ref="938943453"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="259768814">
@@ -425,7 +447,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">K</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="954094681"/>
+								<reference key="IBUINormalTitleColor" ref="938943453"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="44606034">
@@ -443,7 +465,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">L</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="954094681"/>
+								<reference key="IBUINormalTitleColor" ref="938943453"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="342023221">
@@ -461,7 +483,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">M</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="954094681"/>
+								<reference key="IBUINormalTitleColor" ref="938943453"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="375118300">
@@ -479,7 +501,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">N</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="954094681"/>
+								<reference key="IBUINormalTitleColor" ref="938943453"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="654222123">
@@ -497,7 +519,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">O</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="16702180"/>
+								<reference key="IBUINormalTitleColor" ref="289528063"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="852357122">
@@ -515,7 +537,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">P</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="16702180"/>
+								<reference key="IBUINormalTitleColor" ref="289528063"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="21575315">
@@ -533,7 +555,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">Y</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="16702180"/>
+								<reference key="IBUINormalTitleColor" ref="771739621"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="629914970">
@@ -551,7 +573,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">Z</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="16702180"/>
+								<reference key="IBUINormalTitleColor" ref="771739621"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 							<object class="IBUIButton" id="206157869">
@@ -560,7 +582,7 @@
 								<string key="NSFrame">{{236, 128}, {69, 35}}</string>
 								<reference key="NSSuperview" ref="58359680"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
+								<reference key="NSNextKeyView" ref="899885122"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
@@ -569,7 +591,7 @@
 								<int key="IBUIButtonType">1</int>
 								<string key="IBUINormalTitle">reset</string>
 								<reference key="IBUIHighlightedTitleColor" ref="987931984"/>
-								<reference key="IBUINormalTitleColor" ref="16702180"/>
+								<reference key="IBUINormalTitleColor" ref="771739621"/>
 								<reference key="IBUINormalTitleShadowColor" ref="70063497"/>
 							</object>
 						</object>
@@ -579,7 +601,7 @@
 						<reference key="NSNextKeyView" ref="1039904522"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC40MjAwNzIxODU5IDAuNDE2MDIzNjUwNCAwLjQ0NTY1MjE3MzkAA</bytes>
+							<bytes key="NSRGB">MC40MjAwNzIxODU5IDAuNDE2MDIzNjUwNCAwLjQ0NTY1MjE3MzkgMAA</bytes>
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
@@ -589,7 +611,7 @@
 						<string key="NSFrame">{{129, 41}, {63, 58}}</string>
 						<reference key="NSSuperview" ref="427542571"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="523062186"/>
+						<reference key="NSNextKeyView" ref="923808360"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -601,11 +623,8 @@
 							<double key="NSSize">64</double>
 							<int key="NSfFlags">16</int>
 						</object>
-						<object class="NSColor" key="IBUITextColor" id="579614130">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAwIDAAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
+						<reference key="IBUITextColor" ref="987931984"/>
+						<reference key="IBUIHighlightedColor" ref="987931984"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
@@ -628,8 +647,8 @@
 							<double key="NSSize">24</double>
 							<int key="NSfFlags">16</int>
 						</object>
-						<reference key="IBUITextColor" ref="579614130"/>
-						<nil key="IBUIHighlightedColor"/>
+						<reference key="IBUITextColor" ref="987931984"/>
+						<reference key="IBUIHighlightedColor" ref="987931984"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
@@ -648,8 +667,8 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText"/>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
-						<nil key="IBUIHighlightedColor"/>
+						<reference key="IBUITextColor" ref="987931984"/>
+						<reference key="IBUIHighlightedColor" ref="987931984"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
@@ -668,8 +687,8 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText"/>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
-						<nil key="IBUIHighlightedColor"/>
+						<reference key="IBUITextColor" ref="987931984"/>
+						<reference key="IBUIHighlightedColor" ref="987931984"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
@@ -688,8 +707,8 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText"/>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
-						<nil key="IBUIHighlightedColor"/>
+						<reference key="IBUITextColor" ref="987931984"/>
+						<reference key="IBUIHighlightedColor" ref="987931984"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
@@ -708,8 +727,8 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText"/>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
-						<nil key="IBUIHighlightedColor"/>
+						<reference key="IBUITextColor" ref="987931984"/>
+						<reference key="IBUIHighlightedColor" ref="987931984"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
@@ -728,8 +747,8 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText"/>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
-						<nil key="IBUIHighlightedColor"/>
+						<reference key="IBUITextColor" ref="987931984"/>
+						<reference key="IBUIHighlightedColor" ref="987931984"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
@@ -748,8 +767,8 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText"/>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
-						<nil key="IBUIHighlightedColor"/>
+						<reference key="IBUITextColor" ref="987931984"/>
+						<reference key="IBUIHighlightedColor" ref="987931984"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
@@ -760,7 +779,7 @@
 						<string key="NSFrame">{{221, 249}, {20, 20}}</string>
 						<reference key="NSSuperview" ref="427542571"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="379728584"/>
+						<reference key="NSNextKeyView" ref="58359680"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -768,8 +787,8 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText"/>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
-						<nil key="IBUIHighlightedColor"/>
+						<reference key="IBUITextColor" ref="987931984"/>
+						<reference key="IBUIHighlightedColor" ref="987931984"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
@@ -788,8 +807,8 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText"/>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
-						<nil key="IBUIHighlightedColor"/>
+						<reference key="IBUITextColor" ref="987931984"/>
+						<reference key="IBUIHighlightedColor" ref="987931984"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
@@ -800,7 +819,7 @@
 						<string key="NSFrame">{{279, 249}, {20, 20}}</string>
 						<reference key="NSSuperview" ref="427542571"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="58359680"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -808,8 +827,8 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText"/>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
-						<nil key="IBUIHighlightedColor"/>
+						<reference key="IBUITextColor" ref="987931984"/>
+						<reference key="IBUIHighlightedColor" ref="987931984"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
@@ -828,7 +847,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">_</string>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
+						<reference key="IBUITextColor" ref="987931984"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -848,7 +867,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">_</string>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
+						<reference key="IBUITextColor" ref="987931984"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -868,7 +887,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">_</string>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
+						<reference key="IBUITextColor" ref="987931984"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -888,7 +907,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">_</string>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
+						<reference key="IBUITextColor" ref="987931984"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -908,7 +927,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">_</string>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
+						<reference key="IBUITextColor" ref="987931984"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -928,7 +947,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">_</string>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
+						<reference key="IBUITextColor" ref="987931984"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -948,7 +967,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">_</string>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
+						<reference key="IBUITextColor" ref="987931984"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -968,7 +987,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">_</string>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
+						<reference key="IBUITextColor" ref="987931984"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -988,7 +1007,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">_</string>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
+						<reference key="IBUITextColor" ref="987931984"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -1000,7 +1019,7 @@
 						<string key="NSFrame">{{277, 249}, {20, 28}}</string>
 						<reference key="NSSuperview" ref="427542571"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="923808360"/>
+						<reference key="NSNextKeyView" ref="379728584"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -1008,7 +1027,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">_</string>
 						<reference key="IBUIFont" ref="349231746"/>
-						<reference key="IBUITextColor" ref="579614130"/>
+						<reference key="IBUITextColor" ref="987931984"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -1019,13 +1038,7 @@
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="922981722"/>
-				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
-					<object class="NSColorSpace" key="NSCustomColorSpace">
-						<int key="NSID">2</int>
-					</object>
-				</object>
+				<reference key="IBUIBackgroundColor" ref="579614130"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 			<object class="IBUICustomObject" id="175927800">
@@ -1510,6 +1523,7 @@
 							<reference ref="962348008"/>
 							<reference ref="143362701"/>
 							<reference ref="281892576"/>
+							<reference ref="899885122"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -1800,6 +1814,11 @@
 						<reference key="object" ref="281892576"/>
 						<reference key="parent" ref="427542571"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">137</int>
+						<reference key="object" ref="899885122"/>
+						<reference key="parent" ref="427542571"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -1822,6 +1841,7 @@
 					<string>114.IBPluginDependency</string>
 					<string>12.IBPluginDependency</string>
 					<string>13.IBPluginDependency</string>
+					<string>137.IBPluginDependency</string>
 					<string>22.IBPluginDependency</string>
 					<string>23.IBPluginDependency</string>
 					<string>24.IBPluginDependency</string>
@@ -1903,6 +1923,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>NSMutableSet</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1933,7 +1954,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">136</int>
+			<int key="maxID">137</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2167,8 +2188,17 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">brushedSteel_PatrickHoesly.png</string>
-			<string key="NS.object.0">{500, 500}</string>
+			<bool key="EncodedWithXMLCoder">YES</bool>
+			<object class="NSArray" key="dict.sortedKeys">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>Background_1_Clean.png</string>
+				<string>brushedSteel_PatrickHoesly.png</string>
+			</object>
+			<object class="NSMutableArray" key="dict.values">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>{320, 480}</string>
+				<string>{500, 500}</string>
+			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">301</string>
 	</data>

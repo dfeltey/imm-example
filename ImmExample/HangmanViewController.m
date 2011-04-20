@@ -61,7 +61,7 @@
 }
 
 -(void)resetKeyboard{
-    UIColor *color = UIColorFromRGB(0x00A4F8);
+    UIColor *color = UIColorFromRGB(0x457CAA);
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [UIView setAnimationDuration:.4];
