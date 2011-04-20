@@ -11,4 +11,24 @@
 
 @implementation TestController
 
+@synthesize label, userInput;
+
+- (void)dealloc {
+    [label release];
+    [userInput release];
+    [super dealloc];
+}
+
+/*
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+    
+}*/
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    // update label to reflect contents of userInput
+    label.text = textField.text;
+    [textField resignFirstResponder];
+    return YES;
+}
+
 @end

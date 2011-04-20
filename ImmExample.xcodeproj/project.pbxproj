@@ -22,6 +22,11 @@
 		1FD33D3D134E50C4000BB622 /* FAExampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD33D3C134E50C4000BB622 /* FAExampleController.xib */; };
 		1FD33D47134E5293000BB622 /* FAExampleBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FD33D46134E5293000BB622 /* FAExampleBackground.png */; };
 		1FD33D4B134E5B2D000BB622 /* FAGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD33D4A134E5B2D000BB622 /* FAGraphView.m */; };
+		3570140C135C98BF004B25E4 /* HangmanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3570140B135C98BF004B25E4 /* HangmanViewController.xib */; };
+		3570140F135CA171004B25E4 /* brushedSteel_PatrickHoesly.png in Resources */ = {isa = PBXBuildFile; fileRef = 3570140E135CA171004B25E4 /* brushedSteel_PatrickHoesly.png */; };
+		3570141A135CBCAA004B25E4 /* HangmanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35701419135CBCAA004B25E4 /* HangmanViewController.m */; };
+		358BA5B2135E5931002DD00F /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 358BA5B1135E5931002DD00F /* text.txt */; };
+		359AC44E1357FDCD00B66266 /* samIam.png in Resources */ = {isa = PBXBuildFile; fileRef = 359AC44D1357FDCD00B66266 /* samIam.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +54,12 @@
 		1FD33D46134E5293000BB622 /* FAExampleBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FAExampleBackground.png; sourceTree = "<group>"; };
 		1FD33D49134E5B2D000BB622 /* FAGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAGraphView.h; sourceTree = "<group>"; };
 		1FD33D4A134E5B2D000BB622 /* FAGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAGraphView.m; sourceTree = "<group>"; };
+		3570140B135C98BF004B25E4 /* HangmanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HangmanViewController.xib; sourceTree = "<group>"; };
+		3570140E135CA171004B25E4 /* brushedSteel_PatrickHoesly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushedSteel_PatrickHoesly.png; sourceTree = "<group>"; };
+		35701418135CBCA9004B25E4 /* HangmanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanViewController.h; sourceTree = "<group>"; };
+		35701419135CBCAA004B25E4 /* HangmanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanViewController.m; sourceTree = "<group>"; };
+		358BA5B1135E5931002DD00F /* text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
+		359AC44D1357FDCD00B66266 /* samIam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = samIam.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +144,16 @@
 		1FD33D34134E4A16000BB622 /* Custom Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				358BA5B1135E5931002DD00F /* text.txt */,
+				3570140E135CA171004B25E4 /* brushedSteel_PatrickHoesly.png */,
+				359AC44D1357FDCD00B66266 /* samIam.png */,
 				1FD33D46134E5293000BB622 /* FAExampleBackground.png */,
 				1FD33D35134E4A57000BB622 /* FAExampleController.h */,
 				1FD33D36134E4A57000BB622 /* FAExampleController.m */,
 				1FD33D3C134E50C4000BB622 /* FAExampleController.xib */,
+				3570140B135C98BF004B25E4 /* HangmanViewController.xib */,
+				35701418135CBCA9004B25E4 /* HangmanViewController.h */,
+				35701419135CBCAA004B25E4 /* HangmanViewController.m */,
 			);
 			name = "Custom Controllers";
 			sourceTree = "<group>";
@@ -211,6 +228,10 @@
 				1FD33D2A134E33A1000BB622 /* ImmExampleViewController.xib in Resources */,
 				1FD33D3D134E50C4000BB622 /* FAExampleController.xib in Resources */,
 				1FD33D47134E5293000BB622 /* FAExampleBackground.png in Resources */,
+				359AC44E1357FDCD00B66266 /* samIam.png in Resources */,
+				3570140C135C98BF004B25E4 /* HangmanViewController.xib in Resources */,
+				3570140F135CA171004B25E4 /* brushedSteel_PatrickHoesly.png in Resources */,
+				358BA5B2135E5931002DD00F /* text.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +249,7 @@
 				1FD33D37134E4A57000BB622 /* FAExampleController.m in Sources */,
 				1FD33D3A134E4B07000BB622 /* FAModel.m in Sources */,
 				1FD33D4B134E5B2D000BB622 /* FAGraphView.m in Sources */,
+				3570141A135CBCAA004B25E4 /* HangmanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

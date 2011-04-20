@@ -40,6 +40,7 @@ NSArray *		gExampleControllerNames	= nil;
 	if (! gExampleControllerNames) {
 		gExampleControllerNames = [[NSArray alloc] initWithObjects:
 							   @"FAExampleController",
+                               @"HangmanViewController",
 							   nil];
 	}
 }

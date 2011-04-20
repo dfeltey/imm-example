@@ -7,10 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ImExController.h"
 
 
-@interface TestController : NSObject {
+@interface TestController : ImExController <UITextFieldDelegate>
+{
+    UILabel *label;
+    UITextField *userInput;
     
 }
+//IB Outlets
+
+@property (nonatomic, retain) IBOutlet UILabel *label;
+
+@property (nonatomic, retain) IBOutlet UITextField *userInput;
+
+//- (void)textFieldDidBeginEditing:(UITextField *)textField;
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField;
+
 
 @end
