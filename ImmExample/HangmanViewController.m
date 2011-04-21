@@ -17,7 +17,7 @@
 
 @implementation HangmanViewController
 
-@synthesize label, hiddenItems, wordToGuess, charLabels, lineLabels;
+@synthesize view, endGameScreen, label, hiddenItems, wordToGuess, charLabels, lineLabels;
 @synthesize char1, char2, char3, char4, char5, char6, char7, char8, char9, char10, line1, line2, line3, line4, line5, line6, line7, line8, line9, line10;
 
 - (void)dealloc {
@@ -110,18 +110,55 @@
     }
     [UIView commitAnimations];
 }
+
+-(void)newGameHandler:(id)sender{
+    UIButton *button = (UIButton *)sender;
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    [UIView setAnimationDuration:.4];
+    button.alpha = 0;
+    [UIView commitAnimations];
+    [self resetPressed:nil];
+    [self performSelector:@selector(clearScreen:) withObject:button afterDelay:.4];
+}
+
+-(void)clearScreen:(UIButton *)button{
+    [button removeFromSuperview];
+}
+
+-(void) win{
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setTitle:@"New Game" forState:UIControlStateNormal];
+    button.frame = CGRectMake(100.0, 100.0, 90.0, 30.0);
+    button.backgroundColor = [UIColor clearColor];
+    button.titleLabel.textColor = UIColorFromRGB(0x457CAA);
+    [button addTarget:self action:@selector(newGameHandler:) forControlEvents:UIControlEventTouchUpInside];
+    [view addSubview:button];
+}
+
+
+-(void) lose{
+    //add button
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setTitle:@"New Game" forState:UIControlStateNormal];
+    button.frame = CGRectMake(100.0, 100.0, 90.0, 30.0);
+    button.backgroundColor = [UIColor clearColor];
+    button.titleLabel.textColor = UIColorFromRGB(0x457CAA);
+    button.alpha = 0;
+    [button addTarget:self action:@selector(newGameHandler:) forControlEvents:UIControlEventTouchUpInside];
+    [view addSubview:button];
+     
+    //fade in
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    [UIView setAnimationDuration:1];
+    button.alpha = 1;
+    [UIView commitAnimations];
+}
+
 - (void) viewDidLoad{
     self.charLabels = [NSArray arrayWithObjects: char1, char2, char3, char4, char5, char6, char7, char8, char9, char10, nil];
     self.lineLabels = [NSArray arrayWithObjects: line1, line2, line3, line4, line5, line6,  line7, line8, line9, line10, nil];
-    
-    /*
-    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"text" ofType:@"txt"];
-    NSError *error;
-    NSString *contents = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:&error];
-    if (contents == nil) NSAssert(NO,  @"%s: invalid file", NSStringFromSelector(_cmd));
-    label.text = contents;
-    */
-
     
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
@@ -133,6 +170,7 @@
     [UIView commitAnimations];
     [super viewDidLoad];
     [self newGame:@"testing"];
+    [self lose];
 }
 
 @end

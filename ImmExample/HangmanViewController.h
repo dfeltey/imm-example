@@ -14,6 +14,8 @@
     IBOutlet UILabel *label;
     IBOutlet NSMutableSet *hiddenItems;
     NSMutableArray *wordToGuess;
+    IBOutlet UIView *view;
+    UIImageView *endGameScreen;
     
     NSArray *charLabels;
     IBOutlet UILabel *char1;
@@ -41,9 +43,12 @@
     
 }
 
+@property (nonatomic, retain) UIImageView *endGameScreen;
+@property (nonatomic, retain) IBOutlet UIView *view;
 @property (nonatomic, retain) IBOutlet UILabel *label;
 @property (nonatomic, retain) IBOutlet NSMutableSet *hiddenItems;
 @property (nonatomic, retain) NSMutableArray *wordToGuess;
+
 
 @property (nonatomic, retain) NSArray *charLabels;
 @property (nonatomic, retain) IBOutlet UILabel *char1;
@@ -77,7 +82,12 @@
 
 -(void)reveal:(NSString *) ichar;
 
+-(void) newGameHandler: (id)sender;
+
 -(void) viewDidLoad;
+
+-(void) win;
+-(void) lose;
 
 
 @end
