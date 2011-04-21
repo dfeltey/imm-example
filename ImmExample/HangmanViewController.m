@@ -10,55 +10,82 @@
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
-#define INIT_X 30
-#define INIT_Y 265
-#define SPACING 29
+#define WIN 1
+#define LOSE -1
 
 
 @implementation HangmanViewController
 
-@synthesize view, endGameScreen, label, hiddenItems, wordToGuess, charLabels, lineLabels;
-@synthesize char1, char2, char3, char4, char5, char6, char7, char8, char9, char10, line1, line2, line3, line4, line5, line6, line7, line8, line9, line10;
+@synthesize view, game, hiddenItems, winScreen, loseScreen;
+@synthesize charLabels, char1, char2, char3, char4, char5, char6, char7, char8, char9, char10;
+@synthesize lineLabels, line1, line2, line3, line4, line5, line6, line7, line8, line9, line10;
+@synthesize bodyParts, body1, body2, body3, body4, body5, body6;
 
 - (void)dealloc {
-    [label release];
     [super dealloc];
 }
 
 - (IBAction)buttonPress:(id)sender {
-    [self reveal:[[sender titleLabel] text]];
     
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-    [UIView setAnimationDuration:.4];
-    //* gray out and disable
-    [sender setEnabled:NO];
-    [sender setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    [sender setAlpha:0.3];
-    //*/
-    [UIView commitAnimations];
+    if (gameEnded == NO){
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+        [UIView setAnimationDuration:.4];
+        //* gray out and disable
+        [sender setEnabled:NO];
+        [sender setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        [sender setAlpha:0.3];
+        //*/
+        [UIView commitAnimations];
+        [hiddenItems addObject:sender];
+        
+        //check letter
+        BOOL letterInWord = [game CheckLetter:[[sender titleLabel].text lowercaseString]];
+        if (letterInWord == YES){
+            [self reveal:[[sender titleLabel] text]];
+        }
+        else {
+            //fade in next body part
+            NSInteger index = [bodyParts count] - ([game remaining_guesses] + 1);// +1 b/c already decremented by CheckLetter call
+            [UIView beginAnimations:nil context:nil];
+            [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+            [UIView setAnimationDuration:.4];
+            [[bodyParts objectAtIndex:index] setAlpha:1];
+            [UIView commitAnimations];
+        }
+        
     
-    [hiddenItems addObject:sender];
-    
-    //update model
-    label.text = [sender titleLabel].text;
-    
+        //check win/lose
+        NSInteger win_lose = [game WinOrLose];
+        switch (win_lose){
+            case WIN:
+                [self win];
+                gameEnded = YES;
+                break;
+            case LOSE:
+                [self lose];
+                gameEnded = YES;
+                break;
+            default:
+                break;
+        }
+    }
 }
 
-- (IBAction)resetPressed:(id)sender {
+- (void)reset{
     [self resetKeyboard];
     //reset Labels
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [UIView setAnimationDuration:.4];
-    for (int i=0; i < [wordToGuess count]; i++){
+    for (int i=0; i < [game.wordToGuess count]; i++){
         [(UILabel *)[charLabels objectAtIndex:i] setAlpha:0];
         [(UILabel *)[lineLabels objectAtIndex:i] setAlpha:0];
     }
     [UIView commitAnimations];
-    [self performSelector:@selector(newGame:) withObject:@"itsworking" afterDelay:.4];
-    //[self newGame:@"itsworking"];
+    [self performSelector:@selector(newGame) withObject:nil afterDelay:.4];
 }
+
 
 -(void)resetKeyboard{
     UIColor *color = UIColorFromRGB(0x457CAA);
@@ -74,25 +101,16 @@
     [UIView commitAnimations];
 }
 
--(void)newGame:(NSString *) newWord{
-    
-    NSMutableArray *characters = [[NSMutableArray alloc] initWithCapacity:[newWord length]];
-    for (int i=0; i < [newWord length]; i++)
-    {
-        NSString *ichar = [[NSString stringWithFormat:@"%c", [newWord characterAtIndex:i ]] uppercaseString];
-        [characters addObject:ichar];
-        [(UILabel *)[charLabels objectAtIndex:i] setText:ichar];
-        
-    }
-    self.wordToGuess = characters;
-    [characters autorelease];
-    
+-(void)newGame{
+    [game NewGame];
+    gameEnded = NO;
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [UIView setAnimationDuration:.4];
     for (int i=0; i < 10; i++){
-        if (i < [wordToGuess count]){
+        if (i < [game.wordToGuess count]){
             [(UILabel *)[lineLabels objectAtIndex:i] setAlpha:1];
+            [(UILabel *)[charLabels objectAtIndex:i] setText:[game.wordToGuess objectAtIndex:i]];
         }
     }
     [UIView commitAnimations];
@@ -103,8 +121,8 @@
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [UIView setAnimationDuration:.4];
-    for (int i=0; i < [wordToGuess count]; i++){
-        if ([ichar isEqualToString:(NSString *)[wordToGuess objectAtIndex:i]]){
+    for (int i=0; i < [game.wordToGuess count]; i++){
+        if ([ichar isEqualToString:(NSString *)[[game.wordToGuess objectAtIndex:i] uppercaseString]]){
             [(UILabel *)[charLabels objectAtIndex:i] setAlpha:1];
         }
     }
@@ -116,9 +134,17 @@
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [UIView setAnimationDuration:.4];
+    //fade out body if not faded out already (i.e. if you lost the game)
+    if ([game WinOrLose] == LOSE){
+        for (int i=0; i < [bodyParts count]; i++){
+            [(UIImageView *)[bodyParts objectAtIndex:i] setAlpha: 0];
+        }
+    }
+    winScreen.alpha = 0;
+    loseScreen.alpha = 0;
     button.alpha = 0;
     [UIView commitAnimations];
-    [self resetPressed:nil];
+    [self reset];
     [self performSelector:@selector(clearScreen:) withObject:button afterDelay:.4];
 }
 
@@ -127,13 +153,26 @@
 }
 
 -(void) win{
-    UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setTitle:@"New Game" forState:UIControlStateNormal];
-    button.frame = CGRectMake(100.0, 100.0, 90.0, 30.0);
+    button.frame = CGRectMake(210.0, 50.0, 110.0, 43.0);
     button.backgroundColor = [UIColor clearColor];
-    button.titleLabel.textColor = UIColorFromRGB(0x457CAA);
+    [button setTitleColor:UIColorFromRGB(0x457CAA) forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:20];
+    button.alpha = 0;
     [button addTarget:self action:@selector(newGameHandler:) forControlEvents:UIControlEventTouchUpInside];
     [view addSubview:button];
+    
+    //fade in
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    [UIView setAnimationDuration:1];
+    for (int i=0; i < ([bodyParts count] - [game remaining_guesses]); i++){
+        [(UIImageView *)[bodyParts objectAtIndex:i] setAlpha: 0];
+    }
+    winScreen.alpha = 1;
+    button.alpha = 1;
+    [UIView commitAnimations];
 }
 
 
@@ -141,17 +180,27 @@
     //add button
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setTitle:@"New Game" forState:UIControlStateNormal];
-    button.frame = CGRectMake(100.0, 100.0, 90.0, 30.0);
+    button.frame = CGRectMake(210.0, 50.0, 110.0, 43.0);
     button.backgroundColor = [UIColor clearColor];
-    button.titleLabel.textColor = UIColorFromRGB(0x457CAA);
+    [button setTitleColor:UIColorFromRGB(0x457CAA) forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:20];
     button.alpha = 0;
     [button addTarget:self action:@selector(newGameHandler:) forControlEvents:UIControlEventTouchUpInside];
     [view addSubview:button];
      
-    //fade in
+    //fade in missed letters
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-    [UIView setAnimationDuration:1];
+    [UIView setAnimationDuration:.4];
+    for (int i=0; i < [game.wordToGuess count]; i++){
+        [(UILabel *)[charLabels objectAtIndex:i] setAlpha:1];
+    }
+    [UIView commitAnimations];
+    //fade in lose screen
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    [UIView setAnimationDuration:1.5];
+    loseScreen.alpha = 1;
     button.alpha = 1;
     [UIView commitAnimations];
 }
@@ -159,6 +208,7 @@
 - (void) viewDidLoad{
     self.charLabels = [NSArray arrayWithObjects: char1, char2, char3, char4, char5, char6, char7, char8, char9, char10, nil];
     self.lineLabels = [NSArray arrayWithObjects: line1, line2, line3, line4, line5, line6,  line7, line8, line9, line10, nil];
+    self.bodyParts = [NSArray arrayWithObjects: body1, body2, body4, body3, body6, body5, nil];
     
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
@@ -169,8 +219,8 @@
     }
     [UIView commitAnimations];
     [super viewDidLoad];
-    [self newGame:@"testing"];
-    [self lose];
+    [game StartGame];
+    [self newGame];
 }
 
 @end

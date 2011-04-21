@@ -8,15 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "ImExController.h"
+#import "HangmanGame.h"
 
 @interface HangmanViewController :  ImExController {
     
-    IBOutlet UILabel *label;
     IBOutlet NSMutableSet *hiddenItems;
-    NSMutableArray *wordToGuess;
     IBOutlet UIView *view;
-    UIImageView *endGameScreen;
+    IBOutlet UIImageView *winScreen;
+    IBOutlet UIImageView *loseScreen;
+    IBOutlet HangmanGame *game;
+    BOOL gameEnded;
     
+    //it would have been cleaner to add these programatically but I ran out of time.
     NSArray *charLabels;
     IBOutlet UILabel *char1;
     IBOutlet UILabel *char2;
@@ -41,14 +44,22 @@
     IBOutlet UILabel *line9;
     IBOutlet UILabel *line10;
     
+    //I was planning on trying to draw using quartz 2d, but again I didn't have enough time to work out the bugs
+    NSArray *bodyParts;
+    IBOutlet UIImageView *body1;
+    IBOutlet UIImageView *body2;
+    IBOutlet UIImageView *body3;
+    IBOutlet UIImageView *body4;
+    IBOutlet UIImageView *body5;
+    IBOutlet UIImageView *body6;
+    
 }
 
-@property (nonatomic, retain) UIImageView *endGameScreen;
 @property (nonatomic, retain) IBOutlet UIView *view;
-@property (nonatomic, retain) IBOutlet UILabel *label;
 @property (nonatomic, retain) IBOutlet NSMutableSet *hiddenItems;
-@property (nonatomic, retain) NSMutableArray *wordToGuess;
-
+@property (nonatomic, retain) IBOutlet HangmanGame *game;
+@property (nonatomic, retain) IBOutlet UIImageView *winScreen;
+@property (nonatomic, retain) IBOutlet UIImageView *loseScreen;
 
 @property (nonatomic, retain) NSArray *charLabels;
 @property (nonatomic, retain) IBOutlet UILabel *char1;
@@ -74,11 +85,22 @@
 @property (nonatomic, retain) IBOutlet UILabel *line9;
 @property (nonatomic, retain) IBOutlet UILabel *line10;
 
+@property (nonatomic, retain) NSArray *bodyParts;
+@property (nonatomic, retain) IBOutlet UIImageView *body1;
+@property (nonatomic, retain) IBOutlet UIImageView *body2;
+@property (nonatomic, retain) IBOutlet UIImageView *body3;
+@property (nonatomic, retain) IBOutlet UIImageView *body4;
+@property (nonatomic, retain) IBOutlet UIImageView *body5;
+@property (nonatomic, retain) IBOutlet UIImageView *body6;
+
+
 - (IBAction)buttonPress:(id)sender;
+
+-(void)reset;
 
 -(void)resetKeyboard;
 
--(void)newGame:(NSString *) newWord;
+-(void)newGame;
 
 -(void)reveal:(NSString *) ichar;
 
@@ -87,6 +109,7 @@
 -(void) viewDidLoad;
 
 -(void) win;
+
 -(void) lose;
 
 

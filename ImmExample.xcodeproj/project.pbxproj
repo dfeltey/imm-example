@@ -25,11 +25,17 @@
 		1FD33D47134E5293000BB622 /* FAExampleBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FD33D46134E5293000BB622 /* FAExampleBackground.png */; };
 		1FD33D4B134E5B2D000BB622 /* FAGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD33D4A134E5B2D000BB622 /* FAGraphView.m */; };
 		3570140C135C98BF004B25E4 /* HangmanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3570140B135C98BF004B25E4 /* HangmanViewController.xib */; };
-		3570140F135CA171004B25E4 /* brushedSteel_PatrickHoesly.png in Resources */ = {isa = PBXBuildFile; fileRef = 3570140E135CA171004B25E4 /* brushedSteel_PatrickHoesly.png */; };
 		3570141A135CBCAA004B25E4 /* HangmanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35701419135CBCAA004B25E4 /* HangmanViewController.m */; };
 		358BA5B2135E5931002DD00F /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 358BA5B1135E5931002DD00F /* text.txt */; };
-		359AC44E1357FDCD00B66266 /* samIam.png in Resources */ = {isa = PBXBuildFile; fileRef = 359AC44D1357FDCD00B66266 /* samIam.png */; };
 		35A0821E135EAFB400C5A284 /* Background_1_Clean.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0821D135EAFB400C5A284 /* Background_1_Clean.png */; };
+		35B40D94135FCB1A00228A4C /* Lose.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B40D93135FCB1900228A4C /* Lose.png */; };
+		35B40D97135FCB2400228A4C /* Win.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B40D96135FCB2400228A4C /* Win.png */; };
+		35B40DAF135FF21F00228A4C /* body.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B40DAE135FF21E00228A4C /* body.png */; };
+		35B40DB1135FF22700228A4C /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B40DB0135FF22700228A4C /* head.png */; };
+		35B40DB6135FF23300228A4C /* leftarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B40DB2135FF23200228A4C /* leftarm.png */; };
+		35B40DB7135FF23300228A4C /* leftleg.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B40DB3135FF23200228A4C /* leftleg.png */; };
+		35B40DB8135FF23300228A4C /* rightarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B40DB4135FF23200228A4C /* rightarm.png */; };
+		35B40DB9135FF23300228A4C /* rightleg.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B40DB5135FF23300228A4C /* rightleg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,12 +67,18 @@
 		1FD33D49134E5B2D000BB622 /* FAGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAGraphView.h; sourceTree = "<group>"; };
 		1FD33D4A134E5B2D000BB622 /* FAGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAGraphView.m; sourceTree = "<group>"; };
 		3570140B135C98BF004B25E4 /* HangmanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HangmanViewController.xib; sourceTree = "<group>"; };
-		3570140E135CA171004B25E4 /* brushedSteel_PatrickHoesly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushedSteel_PatrickHoesly.png; sourceTree = "<group>"; };
 		35701418135CBCA9004B25E4 /* HangmanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanViewController.h; sourceTree = "<group>"; };
 		35701419135CBCAA004B25E4 /* HangmanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanViewController.m; sourceTree = "<group>"; };
 		358BA5B1135E5931002DD00F /* text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
-		359AC44D1357FDCD00B66266 /* samIam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = samIam.png; sourceTree = "<group>"; };
 		35A0821D135EAFB400C5A284 /* Background_1_Clean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_1_Clean.png; sourceTree = "<group>"; };
+		35B40D93135FCB1900228A4C /* Lose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lose.png; sourceTree = "<group>"; };
+		35B40D96135FCB2400228A4C /* Win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Win.png; sourceTree = "<group>"; };
+		35B40DAE135FF21E00228A4C /* body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = body.png; sourceTree = "<group>"; };
+		35B40DB0135FF22700228A4C /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
+		35B40DB2135FF23200228A4C /* leftarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftarm.png; sourceTree = "<group>"; };
+		35B40DB3135FF23200228A4C /* leftleg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftleg.png; sourceTree = "<group>"; };
+		35B40DB4135FF23200228A4C /* rightarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightarm.png; sourceTree = "<group>"; };
+		35B40DB5135FF23300228A4C /* rightleg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightleg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +130,7 @@
 				1FD33D22134E33A1000BB622 /* MainWindow.xib */,
 				1FD33D3B134E5054000BB622 /* Custom models */,
 				1FD33D4C134E5F65000BB622 /* Custom Views */,
+				35B40DAC135FF1A100228A4C /* Custom Graphics */,
 				1FD33D34134E4A16000BB622 /* Custom Controllers */,
 				1FD33D33134E496E000BB622 /* Core Controllers */,
 				1FD33D17134E33A1000BB622 /* Supporting Files */,
@@ -151,10 +164,7 @@
 		1FD33D34134E4A16000BB622 /* Custom Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				35A0821D135EAFB400C5A284 /* Background_1_Clean.png */,
 				358BA5B1135E5931002DD00F /* text.txt */,
-				3570140E135CA171004B25E4 /* brushedSteel_PatrickHoesly.png */,
-				359AC44D1357FDCD00B66266 /* samIam.png */,
 				1FD33D46134E5293000BB622 /* FAExampleBackground.png */,
 				1FD33D35134E4A57000BB622 /* FAExampleController.h */,
 				1FD33D36134E4A57000BB622 /* FAExampleController.m */,
@@ -185,6 +195,22 @@
 				1FD33D4A134E5B2D000BB622 /* FAGraphView.m */,
 			);
 			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		35B40DAC135FF1A100228A4C /* Custom Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				35B40DB2135FF23200228A4C /* leftarm.png */,
+				35B40DB3135FF23200228A4C /* leftleg.png */,
+				35B40DB4135FF23200228A4C /* rightarm.png */,
+				35B40DB5135FF23300228A4C /* rightleg.png */,
+				35B40DB0135FF22700228A4C /* head.png */,
+				35B40DAE135FF21E00228A4C /* body.png */,
+				35B40D96135FCB2400228A4C /* Win.png */,
+				35B40D93135FCB1900228A4C /* Lose.png */,
+				35A0821D135EAFB400C5A284 /* Background_1_Clean.png */,
+			);
+			name = "Custom Graphics";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,12 +265,18 @@
 				1FD33D2A134E33A1000BB622 /* ImmExampleViewController.xib in Resources */,
 				1FD33D3D134E50C4000BB622 /* FAExampleController.xib in Resources */,
 				1FD33D47134E5293000BB622 /* FAExampleBackground.png in Resources */,
-				359AC44E1357FDCD00B66266 /* samIam.png in Resources */,
 				3570140C135C98BF004B25E4 /* HangmanViewController.xib in Resources */,
-				3570140F135CA171004B25E4 /* brushedSteel_PatrickHoesly.png in Resources */,
 				358BA5B2135E5931002DD00F /* text.txt in Resources */,
 				35A0821E135EAFB400C5A284 /* Background_1_Clean.png in Resources */,
 				09AF90E8135FC1DC0002F726 /* hangmanwords.txt in Resources */,
+				35B40D94135FCB1A00228A4C /* Lose.png in Resources */,
+				35B40D97135FCB2400228A4C /* Win.png in Resources */,
+				35B40DAF135FF21F00228A4C /* body.png in Resources */,
+				35B40DB1135FF22700228A4C /* head.png in Resources */,
+				35B40DB6135FF23300228A4C /* leftarm.png in Resources */,
+				35B40DB7135FF23300228A4C /* leftleg.png in Resources */,
+				35B40DB8135FF23300228A4C /* rightarm.png in Resources */,
+				35B40DB9135FF23300228A4C /* rightleg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

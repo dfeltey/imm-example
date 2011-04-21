@@ -29,5 +29,6 @@
 
 
 @property (nonatomic, retain) NSMutableArray *wordToGuess;
+@property (nonatomic, readonly) int remaining_guesses;
 
 @end

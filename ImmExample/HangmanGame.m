@@ -11,7 +11,7 @@
 #import <time.h>
 
 @implementation HangmanGame
-@synthesize wordToGuess;
+@synthesize wordToGuess, remaining_guesses;
 
 -(void) StartGame
 {
@@ -19,16 +19,16 @@
     
      srandom((unsigned) time(NULL));
     
-     NSString *filepath = [[NSBundle mainBundle] pathForResource:@"hangmanwords.txt" ofType:@"txt"];
+     NSString *filepath = [[NSBundle mainBundle] pathForResource:@"hangmanwords" ofType:@"txt"];
      NSError *error;
      NSString *all_words = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:&error];
      if (all_words == nil) NSAssert(NO,  @"%s: invalid file", NSStringFromSelector(_cmd));
      
-    word_list = [all_words componentsSeparatedByString:@"\n"];
+    word_list = [[all_words componentsSeparatedByString:@"\n"] retain];
     unsigned long num_words = [word_list count];
     word = [word_list objectAtIndex:random()%num_words];
     
-    remaining =[NSMutableSet set];
+    remaining = [[NSMutableSet alloc] init];
     for (int i=0; i< [word length]; i++)
     {
         [remaining addObject:[word substringWithRange:NSMakeRange(i,1)]];
@@ -39,7 +39,7 @@
     wordToGuess = [[NSMutableArray alloc]initWithCapacity:[word length]];
     for(int i=0;i<[word length];i++)
     {
-        [wordToGuess    insertObject:[word substringWithRange:NSMakeRange(i,1)] atIndex:i];
+        [wordToGuess insertObject:[word substringWithRange:NSMakeRange(i,1)] atIndex:i];
     }
     
     
@@ -66,7 +66,7 @@
     unsigned long num_words = [word_list count];
     word = [word_list objectAtIndex:random()%num_words];
     remaining_guesses = 6;
-    remaining =[NSMutableSet set];
+    [remaining removeAllObjects];
     for (int i=0; i< [word length]; i++)
     {
         [remaining addObject:[word substringWithRange:NSMakeRange(i,1)]];
@@ -116,6 +116,13 @@
         return  -1;
     else
         return 0;
+}
+
+- (void)dealloc {
+    [wordToGuess release];
+    [word_list release];
+    [remaining release];
+    [super dealloc];
 }
 
 
