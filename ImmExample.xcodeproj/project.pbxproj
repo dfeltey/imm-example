@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09AF90E5135FC1A00002F726 /* HangmanGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AF90E4135FC1A00002F726 /* HangmanGame.m */; };
+		09AF90E8135FC1DC0002F726 /* hangmanwords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09AF90E7135FC1DC0002F726 /* hangmanwords.txt */; };
 		1FD33D11134E33A1000BB622 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD33D10134E33A1000BB622 /* UIKit.framework */; };
 		1FD33D13134E33A1000BB622 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD33D12134E33A1000BB622 /* Foundation.framework */; };
 		1FD33D15134E33A1000BB622 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD33D14134E33A1000BB622 /* CoreGraphics.framework */; };
@@ -28,11 +30,12 @@
 		358BA5B2135E5931002DD00F /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 358BA5B1135E5931002DD00F /* text.txt */; };
 		359AC44E1357FDCD00B66266 /* samIam.png in Resources */ = {isa = PBXBuildFile; fileRef = 359AC44D1357FDCD00B66266 /* samIam.png */; };
 		35A0821E135EAFB400C5A284 /* Background_1_Clean.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0821D135EAFB400C5A284 /* Background_1_Clean.png */; };
-		35B40D87135FB74900228A4C /* Lose.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B40D86135FB74900228A4C /* Lose.png */; };
-		35B40D8A135FB75200228A4C /* Win.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B40D89135FB75200228A4C /* Win.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09AF90E3135FC1A00002F726 /* HangmanGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanGame.h; sourceTree = "<group>"; };
+		09AF90E4135FC1A00002F726 /* HangmanGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanGame.m; sourceTree = "<group>"; };
+		09AF90E7135FC1DC0002F726 /* hangmanwords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hangmanwords.txt; sourceTree = "<group>"; };
 		1FD33D0C134E33A1000BB622 /* ImmExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImmExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD33D10134E33A1000BB622 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1FD33D12134E33A1000BB622 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,8 +67,6 @@
 		358BA5B1135E5931002DD00F /* text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 		359AC44D1357FDCD00B66266 /* samIam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = samIam.png; sourceTree = "<group>"; };
 		35A0821D135EAFB400C5A284 /* Background_1_Clean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_1_Clean.png; sourceTree = "<group>"; };
-		35B40D86135FB74900228A4C /* Lose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lose.png; sourceTree = "<group>"; };
-		35B40D89135FB75200228A4C /* Win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Win.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +151,6 @@
 		1FD33D34134E4A16000BB622 /* Custom Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				35B40D89135FB75200228A4C /* Win.png */,
-				35B40D86135FB74900228A4C /* Lose.png */,
 				35A0821D135EAFB400C5A284 /* Background_1_Clean.png */,
 				358BA5B1135E5931002DD00F /* text.txt */,
 				3570140E135CA171004B25E4 /* brushedSteel_PatrickHoesly.png */,
@@ -170,6 +169,9 @@
 		1FD33D3B134E5054000BB622 /* Custom models */ = {
 			isa = PBXGroup;
 			children = (
+				09AF90E7135FC1DC0002F726 /* hangmanwords.txt */,
+				09AF90E3135FC1A00002F726 /* HangmanGame.h */,
+				09AF90E4135FC1A00002F726 /* HangmanGame.m */,
 				1FD33D38134E4B07000BB622 /* FAModel.h */,
 				1FD33D39134E4B07000BB622 /* FAModel.m */,
 			);
@@ -242,8 +244,7 @@
 				3570140F135CA171004B25E4 /* brushedSteel_PatrickHoesly.png in Resources */,
 				358BA5B2135E5931002DD00F /* text.txt in Resources */,
 				35A0821E135EAFB400C5A284 /* Background_1_Clean.png in Resources */,
-				35B40D87135FB74900228A4C /* Lose.png in Resources */,
-				35B40D8A135FB75200228A4C /* Win.png in Resources */,
+				09AF90E8135FC1DC0002F726 /* hangmanwords.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +263,7 @@
 				1FD33D3A134E4B07000BB622 /* FAModel.m in Sources */,
 				1FD33D4B134E5B2D000BB622 /* FAGraphView.m in Sources */,
 				3570141A135CBCAA004B25E4 /* HangmanViewController.m in Sources */,
+				09AF90E5135FC1A00002F726 /* HangmanGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
