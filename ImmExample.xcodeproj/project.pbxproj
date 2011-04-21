@@ -24,6 +24,13 @@
 		1FD33D3D134E50C4000BB622 /* FAExampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD33D3C134E50C4000BB622 /* FAExampleController.xib */; };
 		1FD33D47134E5293000BB622 /* FAExampleBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FD33D46134E5293000BB622 /* FAExampleBackground.png */; };
 		1FD33D4B134E5B2D000BB622 /* FAGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD33D4A134E5B2D000BB622 /* FAGraphView.m */; };
+		356E26BE13601B65002D0499 /* CelestialBodyData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 356E26BB13601B65002D0499 /* CelestialBodyData.plist */; };
+		356E26BF13601B65002D0499 /* MZNHCelestialBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 356E26BD13601B65002D0499 /* MZNHCelestialBody.m */; };
+		356E26C413601B73002D0499 /* Planet1.png in Resources */ = {isa = PBXBuildFile; fileRef = 356E26C113601B73002D0499 /* Planet1.png */; };
+		356E26C513601B73002D0499 /* Planet2.png in Resources */ = {isa = PBXBuildFile; fileRef = 356E26C213601B73002D0499 /* Planet2.png */; };
+		356E26C613601B73002D0499 /* Planet3.png in Resources */ = {isa = PBXBuildFile; fileRef = 356E26C313601B73002D0499 /* Planet3.png */; };
+		356E26CA13601B7F002D0499 /* MZNHController.m in Sources */ = {isa = PBXBuildFile; fileRef = 356E26C813601B7F002D0499 /* MZNHController.m */; };
+		356E26CB13601B7F002D0499 /* MZNHController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 356E26C913601B7F002D0499 /* MZNHController.xib */; };
 		3570140C135C98BF004B25E4 /* HangmanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3570140B135C98BF004B25E4 /* HangmanViewController.xib */; };
 		3570141A135CBCAA004B25E4 /* HangmanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35701419135CBCAA004B25E4 /* HangmanViewController.m */; };
 		358BA5B2135E5931002DD00F /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 358BA5B1135E5931002DD00F /* text.txt */; };
@@ -66,6 +73,15 @@
 		1FD33D46134E5293000BB622 /* FAExampleBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FAExampleBackground.png; sourceTree = "<group>"; };
 		1FD33D49134E5B2D000BB622 /* FAGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAGraphView.h; sourceTree = "<group>"; };
 		1FD33D4A134E5B2D000BB622 /* FAGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAGraphView.m; sourceTree = "<group>"; };
+		356E26BB13601B65002D0499 /* CelestialBodyData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CelestialBodyData.plist; sourceTree = "<group>"; };
+		356E26BC13601B65002D0499 /* MZNHCelestialBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZNHCelestialBody.h; sourceTree = "<group>"; };
+		356E26BD13601B65002D0499 /* MZNHCelestialBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZNHCelestialBody.m; sourceTree = "<group>"; };
+		356E26C113601B73002D0499 /* Planet1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet1.png; sourceTree = "<group>"; };
+		356E26C213601B73002D0499 /* Planet2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet2.png; sourceTree = "<group>"; };
+		356E26C313601B73002D0499 /* Planet3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet3.png; sourceTree = "<group>"; };
+		356E26C713601B7F002D0499 /* MZNHController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZNHController.h; sourceTree = "<group>"; };
+		356E26C813601B7F002D0499 /* MZNHController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZNHController.m; sourceTree = "<group>"; };
+		356E26C913601B7F002D0499 /* MZNHController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MZNHController.xib; sourceTree = "<group>"; };
 		3570140B135C98BF004B25E4 /* HangmanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HangmanViewController.xib; sourceTree = "<group>"; };
 		35701418135CBCA9004B25E4 /* HangmanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanViewController.h; sourceTree = "<group>"; };
 		35701419135CBCAA004B25E4 /* HangmanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanViewController.m; sourceTree = "<group>"; };
@@ -164,6 +180,9 @@
 		1FD33D34134E4A16000BB622 /* Custom Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				356E26C713601B7F002D0499 /* MZNHController.h */,
+				356E26C813601B7F002D0499 /* MZNHController.m */,
+				356E26C913601B7F002D0499 /* MZNHController.xib */,
 				358BA5B1135E5931002DD00F /* text.txt */,
 				1FD33D46134E5293000BB622 /* FAExampleBackground.png */,
 				1FD33D35134E4A57000BB622 /* FAExampleController.h */,
@@ -179,6 +198,9 @@
 		1FD33D3B134E5054000BB622 /* Custom models */ = {
 			isa = PBXGroup;
 			children = (
+				356E26BB13601B65002D0499 /* CelestialBodyData.plist */,
+				356E26BC13601B65002D0499 /* MZNHCelestialBody.h */,
+				356E26BD13601B65002D0499 /* MZNHCelestialBody.m */,
 				09AF90E7135FC1DC0002F726 /* hangmanwords.txt */,
 				09AF90E3135FC1A00002F726 /* HangmanGame.h */,
 				09AF90E4135FC1A00002F726 /* HangmanGame.m */,
@@ -200,6 +222,9 @@
 		35B40DAC135FF1A100228A4C /* Custom Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				356E26C113601B73002D0499 /* Planet1.png */,
+				356E26C213601B73002D0499 /* Planet2.png */,
+				356E26C313601B73002D0499 /* Planet3.png */,
 				35B40DB2135FF23200228A4C /* leftarm.png */,
 				35B40DB3135FF23200228A4C /* leftleg.png */,
 				35B40DB4135FF23200228A4C /* rightarm.png */,
@@ -277,6 +302,11 @@
 				35B40DB7135FF23300228A4C /* leftleg.png in Resources */,
 				35B40DB8135FF23300228A4C /* rightarm.png in Resources */,
 				35B40DB9135FF23300228A4C /* rightleg.png in Resources */,
+				356E26BE13601B65002D0499 /* CelestialBodyData.plist in Resources */,
+				356E26C413601B73002D0499 /* Planet1.png in Resources */,
+				356E26C513601B73002D0499 /* Planet2.png in Resources */,
+				356E26C613601B73002D0499 /* Planet3.png in Resources */,
+				356E26CB13601B7F002D0499 /* MZNHController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +326,8 @@
 				1FD33D4B134E5B2D000BB622 /* FAGraphView.m in Sources */,
 				3570141A135CBCAA004B25E4 /* HangmanViewController.m in Sources */,
 				09AF90E5135FC1A00002F726 /* HangmanGame.m in Sources */,
+				356E26BF13601B65002D0499 /* MZNHCelestialBody.m in Sources */,
+				356E26CA13601B7F002D0499 /* MZNHController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
