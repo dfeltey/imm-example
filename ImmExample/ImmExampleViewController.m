@@ -41,6 +41,7 @@ NSArray *		gExampleControllerNames	= nil;
 		gExampleControllerNames = [[NSArray alloc] initWithObjects:
 							   @"FAExampleController",
                                @"HangmanViewController",
+							   @"MZNHController",
 							   nil];
 	}
 }
