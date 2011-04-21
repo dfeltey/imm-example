@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09AF90E5135FC1A00002F726 /* HangmanGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AF90E4135FC1A00002F726 /* HangmanGame.m */; };
+		09AF90E8135FC1DC0002F726 /* hangmanwords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09AF90E7135FC1DC0002F726 /* hangmanwords.txt */; };
 		1FD33D11134E33A1000BB622 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD33D10134E33A1000BB622 /* UIKit.framework */; };
 		1FD33D13134E33A1000BB622 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD33D12134E33A1000BB622 /* Foundation.framework */; };
 		1FD33D15134E33A1000BB622 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD33D14134E33A1000BB622 /* CoreGraphics.framework */; };
@@ -31,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09AF90E3135FC1A00002F726 /* HangmanGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanGame.h; sourceTree = "<group>"; };
+		09AF90E4135FC1A00002F726 /* HangmanGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanGame.m; sourceTree = "<group>"; };
+		09AF90E7135FC1DC0002F726 /* hangmanwords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hangmanwords.txt; sourceTree = "<group>"; };
 		1FD33D0C134E33A1000BB622 /* ImmExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImmExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD33D10134E33A1000BB622 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1FD33D12134E33A1000BB622 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -164,6 +169,9 @@
 		1FD33D3B134E5054000BB622 /* Custom models */ = {
 			isa = PBXGroup;
 			children = (
+				09AF90E7135FC1DC0002F726 /* hangmanwords.txt */,
+				09AF90E3135FC1A00002F726 /* HangmanGame.h */,
+				09AF90E4135FC1A00002F726 /* HangmanGame.m */,
 				1FD33D38134E4B07000BB622 /* FAModel.h */,
 				1FD33D39134E4B07000BB622 /* FAModel.m */,
 			);
@@ -236,6 +244,7 @@
 				3570140F135CA171004B25E4 /* brushedSteel_PatrickHoesly.png in Resources */,
 				358BA5B2135E5931002DD00F /* text.txt in Resources */,
 				35A0821E135EAFB400C5A284 /* Background_1_Clean.png in Resources */,
+				09AF90E8135FC1DC0002F726 /* hangmanwords.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +263,7 @@
 				1FD33D3A134E4B07000BB622 /* FAModel.m in Sources */,
 				1FD33D4B134E5B2D000BB622 /* FAGraphView.m in Sources */,
 				3570141A135CBCAA004B25E4 /* HangmanViewController.m in Sources */,
+				09AF90E5135FC1A00002F726 /* HangmanGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
